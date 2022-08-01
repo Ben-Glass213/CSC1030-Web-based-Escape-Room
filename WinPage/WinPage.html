@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jail Break</title>
+        <link rel = "stylesheet" type = "text/css" href = "css/StylesheetWP.css">
+        <script type = "text/javascript" src = "javascript/JavaScript.js">
+        </script>
+        <script type = "text/javascript" src = "../Main menu/javascript/JavaScriptMM.js">
+        </script>
+
+    </head>
+    <body onload = "endPage()">
+
+        <div class = "wrapper">
+            <div class = "title" id = "title">
+                <h1>JAIL BREAK</h1>
+            </div>
+
+            <div class = "content">
+
+
+                <div class = "columns" id = "column1">
+                    <div id = "stats">
+                        <h2>Player Statistics </h2>
+                        <h3 id = "nameAndCrime"></h3>
+                        <div id = "list">
+                            <ul>
+                                <li id = "points"> Points: </li>
+                                <li class = "parts" id = "pointsP1">  Part 1: </li>
+                                <li class = "parts" id = "pointsP2">  Part 2: </li>
+                                <li class = "parts" id = "pointsP3">  Part 3: </li>
+                                <li class = "parts" id = "pointsP4">  Part 4: </li>
+                                <li class = "parts" id = "pointsP5">  Part 5: </li><br>
+
+                                <li id = "time"> Time taken: </li>
+                                <li class = "parts" id = "timeP1">  Part 1: </li>
+                                <li class = "parts" id = "timeP2">  Part 2: </li>
+                                <li class = "parts" id = "timeP3">  Part 3: </li>
+                                <li class = "parts" id = "timeP4">  Part 4: </li>
+                                <li class = "parts" id = "timeP5">  Part 5: </li><br>
+                                
+                                <li id = "trys"> Attempts: </li><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "columns" id = "column2">
+                    <img id = "freedom" src = "images/free.jpg" alt = "escaped prison">
+                    <h1 id = "win">YOU WIN!!</h1>
+                    <p id = "text">Congradulations </p>
+                </div>
+                <div class = "columns" id = "column3">
+                    <div >
+                         <h2 id = "playAHeader">Play Again! </h2>
+                               <button id = "playButton"  onclick = "tryAgain()" >Play</button>
+                           
+                    </div>
+                    <div id = "darkMode">
+                        <button id = "button" onclick="myFunction()">Dark Mode</button>
+                    </div>
+                    <div id = "music">
+                         <!--Music: https://www.bensound.com/royalty-free-music/track/badass  -->
+                        <audio  controls autoplay>
+                            <source src="audio/bensound-badass.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

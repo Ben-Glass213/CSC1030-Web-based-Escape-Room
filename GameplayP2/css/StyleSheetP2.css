@@ -1,0 +1,462 @@
+/* Importing a new font */
+/* Font: https://www.1001freefonts.com/dark-waters.font*/
+@font-face {
+    font-family: jf;
+    src: url('../fonts/jailfont.ttf');
+}
+
+/* Applying box sizing to the whole html file */
+*{
+    box-sizing:border-box;
+
+}
+
+/* Adding background colour behind image and applying default font 'Arial' to body */
+body{
+    background-color: black;
+    font-family: Arial;
+}
+
+/* Background image styling */
+.background{
+    background-color:black;
+    width:90%;
+    margin: auto;
+    overflow:hidden;
+    background-image: url(../imgs/menuImage.jpg);
+    border-radius: 5px;
+}
+
+/* Applying styling to the title text 'Jail Break' */
+.title{
+    height: 140px;
+    text-align: center;
+    color: #e3650b;
+    font-size: 45px;
+    text-shadow: 21px 10px 3px black;
+
+    font-family: jf;
+    margin-top: 0px;
+}
+
+/* Applying the grey gradient background */
+.main{
+    background-image: linear-gradient(180deg, white, #808080);
+
+    height: 750px;
+    width: 100%;
+    border: 20px;
+    border-top-style: solid;
+    border-top-color: dimgrey;
+    padding: 10px;
+
+
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+}
+
+#column1{
+    width:55%;
+    float: left;
+    padding: 15px;
+    height: 100%;
+    overflow:hidden;
+}
+
+#column2, #column3{
+    width:22%;
+    float: left;
+    padding: 15px;
+    height: 100%;
+    overflow:hidden;
+    opacity: 1;
+}
+
+/* The games image properties */
+#gamescreen{
+
+    width: 100%;
+    border-style: outset;
+    border-width: 10px;
+    border-radius: 5px;
+    border-color: darkgrey;
+    box-shadow: 8px 8px 10px black;
+
+}
+
+/* Narration box properties */
+#narrationbox{
+
+    width: 100%;
+    height: 200px;
+    border-width: 5px;
+    border-style: outset;
+    border-radius: 5px;
+    border-color: darkgrey;
+    background-image: linear-gradient(180deg, dimgrey, #808080);
+    box-shadow: 8px 8px 10px black;
+
+
+}
+
+/* Text within the narration box properties */
+#narBoxText{
+    color: white;
+    margin: 15px;
+    font-size: 22px;
+    text-shadow: 3px 3px 2px black;
+
+}
+
+/* Applying styling to the two buttons How To Play 'h2p' and Quit to menu button 'quit' */
+#h2p, #quit{
+    cursor:pointer; 
+    float: left;
+    font-family: jf;
+    font-size: 25px;
+    height: 60px;
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(180deg, dimgrey, #808080);
+    text-shadow: 5px 5px 3px black;
+    box-shadow: 4px 4px 10px black;
+
+    border-width: 5px;
+    border-style: outset;
+    border-color: darkgrey;
+    border-radius: 5px;
+    margin: 6px;
+
+    transition-duration: 0.2s;
+}
+
+/* 'quit' Hover styling ie colour from grey to orange */
+#quit:hover{
+    color: #e3650b;
+    border-color: #e3650b;
+}
+
+/* 'h2p' Hover styling ie colour from grey to orange */
+#h2p:hover{
+    color: #e3650b;
+    border-color: #e3650b;
+}
+
+/* Inventory box styling properties */
+#inventoryBox{
+    width:70%;
+    height: 430px;
+    font-size: 6px;
+    background-image: linear-gradient(180deg, dimgrey, #808080);
+    box-shadow: 8px 8px 10px black;
+
+    border-color: darkgrey;
+    border-style: outset;
+    border-width: 10px;
+    border-radius: 5px;
+
+
+}
+
+/* Just a title at the top of the inventory box */
+#inventoryTitle{
+    text-align: center;
+    font-family: jf;
+    color: white;
+    font-size: 25px;
+    text-shadow: 5px 5px 3px black;
+
+    border-bottom: 5px solid lightgrey;
+
+}
+
+/* Place holder information found within the 'Inventory' box, really just there to show item images when playing. To be added! */ 
+#invPlaceHolderInfo{
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    text-shadow: 3px 3px 2px black;
+}
+
+
+
+#musicInfo{ 
+    padding-top: 250px;
+    height: 340px;
+
+}
+
+/* Box containing the audio file which can be played or paused and the text. Text not actually styled here! */
+#musicBox{
+    height: 60%;
+    background-image: linear-gradient(180deg, dimgrey, #808080);
+    box-shadow: 8px 8px 10px black;
+
+    border-color: darkgrey;
+    border-style: outset;
+    border-width: 10px;
+    border-radius: 5px;
+
+    text-align: center;
+
+    transition-duration: 0.3s;
+     cursor: default;
+
+    /* Music Box text labeled 'Optional Music' styling */ 
+
+
+    color: white;
+    font-size: 30px;
+    text-shadow: 5px 5px 3px black;
+    font-family: jf;
+
+
+}
+#music {
+    width:50%;
+    text-align: center;
+}
+
+/* Just a box to add hover properties over the music box */
+
+
+#darkMode {
+
+    float:inherit;
+
+}
+#darkButton{
+    cursor:pointer; 
+    margin: auto;
+    text-align: center;
+    font-family: jf;
+    font-size: 25px;
+    background-image: linear-gradient(180deg, dimgrey, #808080);
+    text-shadow: 5px 5px 3px black;
+    box-shadow: 4px 4px 10px black;
+    color: white;
+    border-width: 5px;
+    border-style: outset;
+    border-color: darkgrey;
+    border-radius: 5px;
+    margin: 6px;
+
+    transition-duration: 0.2s;
+}
+#darkButton:hover{
+    color: #e3650b;
+    border-color: #e3650b;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+}
+.darkerMain{
+    background-image: linear-gradient(180deg, #171717, #0a0a0a);
+    width: 100%;
+    padding: 10px;
+    border-top-color: #0a0a0a;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+
+}
+
+#demo{
+    position: fixed;
+    float:left;
+    left:420px;
+    cursor:pointer; 
+
+    font-size: 60px;
+    font-family: jf;
+
+    text-shadow: 5px 5px 3px black;
+
+    color: white;
+
+    border-style: hidden;
+    background: transparent;
+
+
+    transition-duration: 0.2s;
+
+}
+#demo:hover{
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+    color: #e3650b;
+}
+#magnify {
+    position: absolute;
+    float:left;
+    top: 508px;
+    left:492px;
+    cursor:pointer;
+
+}
+#next {
+    position: absolute;
+    float:left;
+    top: 450px;
+    left:420px;
+
+    background-color: transparent;
+
+    font-size: 100px;
+    font-family: jf;
+
+    text-shadow: 5px 5px 3px black;
+
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+#nextButton {
+    padding: 10px;
+    filter:contrast(1.2);
+    text-shadow: 5px;
+    cursor: pointer;
+
+
+}
+#next{
+    position: absolute;
+    float:left;
+    left:420px;
+    top: 450px;
+    cursor:pointer; 
+
+    font-size: 60px;
+    font-family: jf;
+
+    text-shadow: 5px 5px 3px black;
+
+    color: white;
+
+    border-style: hidden;
+    background: transparent;
+
+
+    transition-duration: 0.2s;
+
+}
+#next:hover{
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+    color: #e3650b;
+}
+
+#instructionList {
+  position: absolute;
+    height: 400px;;
+    width: 45%;
+    background-color: darkgrey;
+    font-size: 20px;
+    list-style-type: square;
+    padding: 20px;
+    text-align: justify;
+}
+#exith2p{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+#timeLeft {
+    color: #e3650b;
+    cursor: default;
+    position:absolute;
+    top: 400px;
+    margin: auto;
+    text-align:left;
+    font-size: 25px;
+    text-shadow: 2px 2px 1px black;
+    padding: 10px;
+
+}
+
+#points {
+    color: #e3650b;
+    cursor: default;
+    position:absolute;
+    top: 460px;
+    margin: auto;
+    text-align: left;
+    font-size: 25px;
+    text-shadow: 2px 2px 1px black;
+    padding: 10px;
+
+}
+#timeLeft:hover{
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+    color: #e3450b;
+    border-color: #e3650b;
+}
+#points:hover{
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+    color: #e3450b;
+    border-color: #e3650b;
+}
+
+#combImg{
+    align-content: center;
+}
+
+#pickUp{
+    text-shadow: 3px 3px 2px black;
+    font-family: jf;
+    font-size: 35px;
+    position: absolute;
+    top: 550px;
+    left:320px;
+    background-color: transparent;
+    border: none;
+    color: antiquewhite;
+}
+
+#pickUp:hover{
+    color: #e3450b;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+    cursor: pointer;
+}
+
+#magnify1{
+    position: absolute;
+    top: 434px;
+    left: 340px;
+    cursor: pointer;
+}
+
+#magnify2{
+    position: absolute;
+    top: 582px;
+    left: 304px;
+    cursor: pointer;
+}
+
+#magnify3{
+    position: absolute;
+    top:408px;
+    left: 507px;
+    cursor: pointer;
+}
+
+
+

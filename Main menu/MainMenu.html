@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jail Break</title>
+        <link rel = "stylesheet" type = "text/css" href = "css/StylesheetMM.css">
+        <script type = "text/javascript" src = "javascript/JavaScriptMM.js">
+        </script>
+
+    </head>
+    <body onload = "setSelectedCrime()">
+
+        <div class = "wrapper">
+            <div class = "title" id = "title">
+                <h1>JAIL BREAK</h1>
+            </div>
+
+            <div class = "content">
+
+                <div class = "columns" id = "column1">
+                    <div id = "nameInput">
+                        <form id = "form1">
+                            <label id = "nameTitle" for="username">Name</label><br>
+                            <input name = "playerName" type="text" id="username" required ><br>
+                            <p id = "demo"></p>
+                        </form>
+                    </div>
+                    <div id = "howtoplay">
+                        <h2>How to play </h2>
+                        <div id = "list">
+                            <ul>
+                                <li> Enter your name</li>
+                                <li> Choose your crime</li>
+                                <li> Press play!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "columns" id = "column2">
+                    <div >
+                        <button id = "playButton"  onclick = "setName()" >Play</button>
+
+                    </div>
+                    <div id = "darkMode">
+                        <button id = "button" onclick="myFunction()">Dark Mode</button>
+                    </div>
+                    <div id = "music">
+                        <audio  controls autoplay>
+                            <!--Music: https://www.bensound.com/royalty-free-music/track/badass  -->
+                            <source src="audio/bensound-badass.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class = "columns" id = "column3">
+                    <div id = "selectCrime">
+                        <label for="crimes">Choose a crime</label><br>
+                        <select id="crimes" onclick = "setSelectedCrime()" required>
+                            <option value="vandalism">Vandalism</option>
+                            <option value="fraud">Fraud</option>
+                            <option value="disorderlyConduct">Disorderly Conduct</option>
+                            <option value="theft">Theft</option> 
+                        </select>
+                    </div>
+                    <div id = "image">
+                        <!--Menu background image: https://unsplash.com/photos/T5roX1jajzU  -->
+                        <img id = "prisonerImage" src="images/prisoner4.jpeg" alt="Prisoner behind bars in a cell" style="width:90%;height:250px;">
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </body>
+</html>

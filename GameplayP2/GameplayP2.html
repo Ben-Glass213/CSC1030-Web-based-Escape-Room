@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jail Break</title>
+        <link href="css/StyleSheetP2.css" type="text/css" rel=stylesheet>
+
+        <script type = "text/javascript" src = "../Main%20menu/javascript/JavaScriptMM.js">
+        </script>
+        <script type = "text/javascript" src = "javaScript/JavaScriptP2.js">
+        </script>
+    </head>
+
+    <body onload = "getInfo()">
+
+        <!-- Background Image ie 'prison bars' -->
+        <div class="background" > 
+
+            <!-- Everything is contained in this div tag -->
+            <div class="content">
+
+                <!-- Title at top of page -->
+                <div class="title">
+                    <h1>Jail Break</h1>
+                </div>
+
+                <!-- This is the main box 'white to grey box' containing everything -->
+                <div class="main" id = "main" >
+
+                    <!-- Game image screen -->
+                    <div id = "column1">
+
+                        <div id="gamescreen" >
+                            <div id = "instructions">
+                            </div>
+                            <img id = "game" src="imgs/4%20solitary%20confinement.jpg" alt="SolitaryConfinement" width = 100% height = 100%>
+                            <div id = "instructions"> </div>
+                            
+                            <div id = "magImg"></div>
+                            <div id = "magImg1"></div>
+                            <div id = "magImg2"></div>
+                            <div id = "magImg3"></div>
+                            
+                            <audio id="bedSound"><source src="audio/bedSound.mp3" type="audio/mp3"> browser does not support the audio element</audio>
+                            
+                            <audio id="spiderSound"><source src="audio/spiderHiss.mp3" type="audio/mp3"> browser does not support the audio element</audio>
+
+                        </div>
+
+
+                        <!-- Narration box containing info about player and JavaScript stuff -->
+                        <div id="narrationbox">
+                            <div id="narBoxText">   
+
+                                <p id = "playerSpeech">[<b id = "name"></b>]: Now would be a perfect time to slip a note under Gerald's door!</p>
+
+                                <p id = "narration">[Narration]: You walk outside your cell and pass by solitary confinement.</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id = "column2">
+
+
+
+
+                        <!-- This is the inventory box -->
+                        <div id="inventoryBox">
+                            <!-- Title 'Inventory' and placeholder info below -->
+                            <div id="inventoryTitle">Inventory</div>
+                            <p id="invPlaceHolderInfo"></p>
+                            <div id = "comb">
+                            </div>
+                            <div id = "combInInv">
+                                <img id = "combImg" src = "imgs/comb.png" alt = "comb" height = 70px width = 80px;>
+                            </div>
+                            <div id="note">
+                            </div>
+                        </div>
+                        <div id = "nextPart">
+                            <img id = "nextButton" onclick = "nextFunction()" src = "imgs/arrow.png" alt = "next arrow" height = 180px width = 200px;>
+                        </div>
+                    </div>
+
+
+                    <div id = "column3">
+
+                        <!-- This is for the two buttons -->
+                        <div id = "buttons">
+                            <button id="h2p" onclick = "howToPlay()">How To Play?</button>
+                            <a href = "../Main Menu/MainMenu.html">
+                                <button id = "quit">Quit To Menu</button>
+                            </a>
+                        </div>
+                        <div id = "timer">
+                          <p id = "timeLeft">The timer has begun! </p>
+                        </div>
+                        <div id = "points">
+                        <p id = "pnts"> Points: 0</p>
+                        </div>
+                        <!-- This is the box for the audio -->
+                        <div id = "musicInfo">
+                            <p id="musicBox" >Optional Music</p>
+
+                            <!-- Actual audio file being added -->
+                             <!--Music: https://www.bensound.com/royalty-free-music/track/badass  -->
+                            <div id="music">
+                                <audio controls>
+                                    <source src="audio/bensound-badass.mp3">
+                                    Your browser does not support the audio element!
+                                </audio>
+                            </div>
+
+                            <div id = "darkMode">
+                                <button id = "darkButton" onclick="myFunction()">Dark Mode</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
